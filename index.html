@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Bossman media concept a studio with adequate equipment for photography.You can also register to be a student">
+    <link rel="stylesheet" href="./student.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="./logo.png">
+
+    <title>Student form</title>
+</head>
+
+<body>
+    <header>
+        <img src="./logo.png" alt="" class="logo">
+        <h1>Bossman Media</h1>
+        <p>Be a successful student in photography</p>
+    </header>
+
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <a href="./blog.html">Blog</a>
+        <a href="./contact.html">Contact</a>
+    </nav>
+
+
+    <div class="top">
+        <h1>Bossman mini photography acdemy</h1>
+        <div class="typing-container">
+            <p id="typing-text">Register
+                to be a student in bossman media academy at a low price.You can also register for online courses at
+                affordable price.Register to have a mentor in photography career </p>
+        </div>
+        <h1>Student Registration-Form</h1>
+
+        <div class="form">
+            <form action="mailto:efabiyi613@gmail.com" enctype="text/plain" method="post">
+                <label for="name">First-Name</label><br>
+                <input type="text" class="name" name="First-Name" required id="fullName"><br>
+                <label for="ln">Last-Name</label><br>
+                <input type="text" class="ln" name="Last-Name" required><br>
+                <label for="age">Age-Range</label> <br>
+                <select name="age" id="age" required name="Age" class="custom-select">
+                    <option value="16-20" class="Age">16-20</option>
+                    <option value="21-30">21-30</option>
+                    <option value="31-50">31-50</option>
+                </select><br>
+                <label for="e-mail">E-mail</label><br>
+                <input type="email" name="E-mail" class="e-mail" required><br>
+                <label for="type1">Tution-Type:</label>
+                <br>
+                <label for="online">Online Tution</label>
+                <input type="radio" id="Online" name="Tution-Type" value="Online">
+                <br>
+                <label for="Offline">Physical Tution</label>
+                <input type="radio" class="type2" name="Tution-Type" value="Offline ">
+                <br>
+                <label for="Categories">Category:</label>
+                <select name="Category" id="Category" required class="custom-select">
+                    <option value="Video Coverage">Video Coverage</option>
+                    <option value="Pure photoshop editing">Pure photoshop editing</option>
+                    <option value="Cinematography
+">Cinematography</option>
+                    <option value="Picture Enlargement">Picture Enlargement</option>
+                    <option value="Photo Frames">Photo Frames</option>
+                    <option value="Make-up">Make-up</option>
+                </select><br>
+                <label for="State">State</label><br>
+                <input type="text" name="State" class="State"><br><br>
+
+                <input type="submit" class="submit" id="submit">
+<h3>This form would redirect you to your gmail account to send this form to us.</h3>
+            </form>
+      
+        </div>
+        <h4 id="full"></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.animateNumber.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/custom.js"></script>
+
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const textElement = document.getElementById('typing-text');
+                const textContent = textElement.innerHTML;
+
+                // Clear the text content
+                textElement.innerHTML = '';
+
+                // Add each letter with a delay
+                for (let i = 0; i < textContent.length; i++) {
+                    setTimeout(function () {
+                        textElement.innerHTML += textContent.charAt(i);
+                    }, 75 * i);
+                }
+            });
+
+        </script>
+
+    </div>
+
+    <script>
+        document.getElementById("submit").onclick = function () {
+            fn = document.getElementById("fullName").value
+            alert(fn + " " + "This form would redirect you to your E-mail to send this form to us.Check your E-mail after 30minute you would receive a message from Bossman media concept.")
+        document.getElementById("full ").innerHTML="This would link you to you E-mail to send the form as a message..........."
+
+
+        }
+    </script>
+</body>
+
+</html>

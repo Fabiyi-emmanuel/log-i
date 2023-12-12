@@ -1,0 +1,104 @@
+.typing-container {
+  margin-top: 50px;
+}
+
+#typing-text {
+  font-size: 30px;
+color: rgb(0, 0, 0);
+ background-color: white;
+ background-attachment: fixed;
+ padding: 40px;
+ font-weight: bolder;
+ background-repeat: no-repeat;
+ text-shadow: 10px 5px 3px rgb(218, 50, 50);
+ width: 90%;
+ margin-left: 0 auto;
+text-align: right;
+  animation: typing 1.5s steps(20, end), blink-caret 0.75s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+header {
+  background-image: url(./about-img.png);
+font-size: xx-large;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  text-shadow: 10px 10px 10px  wheat;
+  text-align: center;
+  padding: 1em;
+}
+header p{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: #000;
+}
+
+.logo {
+  width: 50px;
+}
+
+nav {
+  background-color: #444;
+  padding: 0.5em;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+}
+.top{
+    padding: 40px;
+    background-color: wheat;
+}
+.top h1{
+    text-align: center;
+    font-size: 50px;
+}
+h1{
+    color: #000;
+}
+
+form{
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    margin: 0 auto;
+ 
+    box-shadow: 10px 10px 10px black;
+}
+label{
+    font-size:  large;
+    font-weight: bold;
+    padding: 10px;
+}
+input{
+    width: 50%;
+    font-weight: bolder;
+    color: brown;
+    margin: 20px;
+    border: 2px solid black;
+}
+option{
+    border: 2px solid black;
+}
+.submit{
+    background-color: blue;
+    box-shadow: 10px 10px 6px black;
+    border-radius: 40px;
+    color: white;
+margin-left: 90px;
+}
+.submit:hover{
+    background-color: wheat;
+    color: blue;
+    box-shadow: 5px 5px 6px black;
+}
